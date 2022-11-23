@@ -50,3 +50,5 @@ It is better to perform the IMF-based brightness normalization in advance, since
 
 To generate the normalized images and the histogram tables of IMF, run `data/preprocess.m` for the Test, Training, and Training_ICCV data. Then, the generated images and tables are stored into `data/IMF_short2long` and `data/IMF_table`, respectively.
 
+Notably, for two images ''filename1.tif'', ''filename2.tif'', if the first image is normalized to the second image, then the normalized image is saved as ''filename1-filename2.tif''. The corresponding IMF table is saved as ''filename1-filename2.mat''.
+### Ground truth
