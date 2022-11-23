@@ -1,6 +1,5 @@
 # LDRFlow
 Implementation of our paper, entitiled Unsupervised Optical Flow Estimation for Differently Exposed Images in LDR Domain, submitted to IEEE TCSVT.
-
 ## Requirements
 The code has been tested with Python 3.7, PyTorch 1.7, and Cuda 10.2.
 ```Shell
@@ -12,7 +11,6 @@ conda install tensorboard
 conda install scipy
 conda install opencv
 ```
-
 ## Datasets
 To train/evaluate, you will need to download the required datasets.
 * [SIG17 (Kal17)](https://cseweb.ucsd.edu/~viscomp/projects/SIG17HDR/)
@@ -37,9 +35,7 @@ To train/evaluate, you will need to download the required datasets.
         ├── Training_ICCV
     ├── GT_flow
 ```
-
 Once the raw data is downloaded, do the following:
-
 * put the training split of SIG17 and the training split of ICCP19 into `data/Raw/Training`.
 * put the ICCV21 into `data/Raw/Training_ICCV`.
 * put the test splits of SIG17 (PAPER and EXTRA), the test split of ICCP19, the Sen12, and the Tursun16 into `data/Raw/Test`
@@ -52,3 +48,6 @@ To generate the normalized images and the histogram tables of IMF, run `data/pre
 
 Notably, for two images ''filename1.tif'', ''filename2.tif'', if the first image is normalized to the second image, then the normalized image is saved as ''filename1-filename2.tif''. The corresponding IMF table is saved as ''filename1-filename2.mat''.
 ### Ground truth
+We use two traditional methods to obtain the ground truth optical flows of test data:
+* [FullFlow](https://cqf.io/fullflow/)
+* [MirrorFlow](https://bitbucket.org/visinf/projects-2017-mirrorflow/src/master/)
