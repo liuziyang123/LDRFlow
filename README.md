@@ -55,12 +55,15 @@ We use two traditional methods to obtain the ground truth optical flows of test 
 ## 4. Training
 When the data is prepaired, run the following command:
 ```Shell
-python train.py --name ldrflow-ablation --stage ablation --num_steps 100000 --batch_size 3 --lr 0.00025 --image_size 384 704 --wdecay 0.0001
+python train.py --name ablation6 --stage ablation --num_steps 100000 --batch_size 3 --lr 0.00025 --image_size 384 704 --wdecay 0.0001
 python train.py --name ldrflow-sota --stage sota --num_steps 150000 --batch_size 12 --lr 0.0004 --image_size 384 704 --wdecay 0.0001
 ```
 Training logs will be written to the `runs` which can be visualized using tensorboard.
 
-
-
-
+## 5. Test
+For test, run the following command:
+```Shell
+python evaluate.py --model=checkpoints/ldrflow-sota.pth --mixed_precision
+```
+Our pretraind model is provided [here](https://drive.google.com/drive/folders/1XmpI3ldHEaqXdE-6vCxLzSTIb7Z8F5yn?usp=sharing).
 
