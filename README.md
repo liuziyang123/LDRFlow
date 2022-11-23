@@ -17,9 +17,9 @@ conda install opencv
 To train/evaluate, you will need to download the required datasets.
 * [SIG17 (Kal17)](https://cseweb.ucsd.edu/~viscomp/projects/SIG17HDR/)
 * [ICCP19 (Pra19)](https://val.cds.iisc.ac.in/HDR/ICCP19/)
-* [SIG17 (Kal17)](https://cseweb.ucsd.edu/~viscomp/projects/SIG17HDR/)
-* [SIG17 (Kal17)](https://cseweb.ucsd.edu/~viscomp/projects/SIG17HDR/)
-* [SIG17 (Kal17)](https://cseweb.ucsd.edu/~viscomp/projects/SIG17HDR/)
+* [Sen12](https://web.ece.ucsb.edu/~psen/hdrvideo)
+* [Tursun16](https://user.ceng.metu.edu.tr/~akyuz/files/eg2016/index.html)
+* [ICCV21](https://guanyingc.github.io/DeepHDRVideo/)
 
 Build the `data` dir, and put the downloaded data in it. By default `datasets.py` will search for the datasets in the location.
 ```Shell
