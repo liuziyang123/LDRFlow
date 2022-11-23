@@ -43,3 +43,7 @@ Once the raw data is downloaded, do the following:
 * put the training split of SIG17 and the training split of ICCP19 into `data/Raw/Training`.
 * put the ICCV21 into `data/Raw/Training_ICCV`.
 * put the test splits of SIG17 (PAPER and EXTRA), the test split of ICCP19, the Sen12, and the Tursun16 into `data/Raw/Test`
+
+## Preprocessing
+It is better to perform the IMF-based brightness normalization in advance, since the code is based on Matlab. You can the run a demo of IMF by `data/IMF_demo.m`. We also implement the IMF using PyTorch, such that the brightness normalization can run on-the-fly. The demo of IMF in PyTorch can be found at `core/imf_utils.py`
+
