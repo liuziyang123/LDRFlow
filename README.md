@@ -1,5 +1,5 @@
 # LDRFlow
-Implementation of our paper, entitiled Unsupervised Optical Flow Estimation for Differently Exposed Images in LDR Domain, submitted to IEEE TCSVT.
+Implementation of our paper, entitiled Unsupervised Optical Flow Estimation for Differently Exposed Images in LDR Domain, submitted to IEEE TCSVT. Our code is based on [RAFT](https://github.com/princeton-vl/RAFT).
 ## 1. Requirements
 The code has been tested with Python 3.7, PyTorch 1.7, and Cuda 10.2.
 ```Shell
